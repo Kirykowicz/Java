@@ -16,9 +16,10 @@ public class RockPaperScissors {
             System.out.println("\nrock - paper - scissors, shoot!");
             String choice = scan.nextLine();
             String computerChoice = computerChoice();
-            System.out.println("\nYou chose:\n" + choice);
-            System.out.println("\nThe computer chose:\n" + computerChoice);
-            System.out.println("\n" + result(choice, computerChoice) + "\n");
+            String result = result(choice, computerChoice);
+            System.out.println("\n ------------------------------ \n");
+            printResult(choice, computerChoice, result);
+            System.out.println("\n ------------------------------ \n");
         } else {
             System.out.println("Darn, some other time...!");
         }
@@ -61,20 +62,10 @@ public class RockPaperScissors {
         return result;
       }
  
-     //Task 5  – Write a function that prints your choice, the computer's, and the result.
-
-    /**
-     * Name: printResult - It prints everything (your choice, computer choice, result)
-     * @param yourChoice (String)
-     * @param computerChoice (String)
-     * @param result (String)
-     * 
-     * Inside the function:
-     * 
-     *  1. prints everything:
-     *      – prints: You chose:          <your choice>
-     *      – prints: The computer chose: <computer choice>
-     *      – prints: <result>
-     */
+     public static void printResult(String choice, String computerChoice, String result){
+            System.out.println("\nYou chose:\n" + choice);
+            System.out.println("\nThe computer chose:\n" + computerChoice);
+            System.out.println("\n" + result);
+     }
 
 }
