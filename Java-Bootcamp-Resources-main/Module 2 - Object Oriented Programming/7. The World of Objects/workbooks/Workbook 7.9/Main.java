@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
   
     public static void main(String[] args) {
@@ -20,7 +22,12 @@ public class Main {
 
         for (int i = 0; i < people.length; i++) {
             boolean passportApproved = people[i].applyPassport();
-             // TODO: passport logic here
+            if(passportApproved){
+                airline.createReservation(people[1]);
+            } else {
+                System.out.println("Sorry " + people[i].getName() + ". Your passport: " + Arrays.toString(people[i].getPassport()) + " is not valid.\n");  
+            }
+            
 
             airline.createReservation(people[i]);
         }

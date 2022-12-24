@@ -3,7 +3,7 @@ public class Calendar {
         
         //See Learn the Part for the complete instructions (link in resources folder of Udemy video).  
 
-        String day = "MadeUPDay"; //Can be any day.
+        String day = "Friday"; //Can be any day.
         System.out.println("Hey, are you free on " + day + "? \n");
 
 
@@ -11,22 +11,6 @@ public class Calendar {
         
         //Check 'calendar' here:        
         
-        switch(day){
-            case "Monday": System.out.println("Sorry, I have to stay at work late.");
-            break;
-            case "Tuesday": System.out.println("It looks like I have meetings all day.");
-            break;
-            case "Wednesday": System.out.println("I have a dentist appointment. Some other time!");
-            break;
-            case "Thursday": System.out.println("Sorry, thursday is date night!");
-            break;
-            case "Friday": System.out.println("I'm free!!");
-            break;
-            case "Saturday": System.out.println("I'm free!!");
-            break;
-            case "Sunday": System.out.println("I'm free!!");
-            break;
-            default: System.out.println("That is not a day!");
-        }
+
     }
 }

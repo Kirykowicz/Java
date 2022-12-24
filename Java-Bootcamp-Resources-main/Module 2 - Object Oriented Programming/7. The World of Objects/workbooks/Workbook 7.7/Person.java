@@ -75,10 +75,10 @@ public class Person {
 
     public String toString(){
         return "Name: " + this.name + "\n" + "Nationality: " + 
-this.nationality + "\n" + "Date of Birth: " + 
-this.dateOfBirth + "\n" + "Seat Number: " +
-this.seatNumber + "\n" + "Passport: " + 
-Arrays.toString(this.passport) + "\n";
+        this.nationality + "\n" + "Date of Birth: " + 
+        this.dateOfBirth + "\n" + "Seat Number: " +
+        this.seatNumber + "\n" + "Passport: " + 
+        Arrays.toString(this.passport) + "\n";
     }
  
 }
