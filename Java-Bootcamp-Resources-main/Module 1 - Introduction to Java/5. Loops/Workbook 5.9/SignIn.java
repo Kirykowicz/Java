@@ -8,15 +8,24 @@ public class SignIn {
         /* Task 1 
             1. Pick up a username and password from the user.
        */
+      String usernameAttempt;
+      String passwordAttempt;
         Scanner scan = new Scanner(System.in);
         System.out.println("\nWelcome to Javagram! Sign in below\n");
         System.out.print("- Username: ");
-        //pick up username
+        usernameAttempt = scan.nextLine();
         System.out.print("- Password: ");
-        //pick up password
-
+        passwordAttempt = scan.nextLine();
+    
         // see Learn the Part for the remaining instructions.
         
+        while(!username.equals(usernameAttempt) || !password.equals(passwordAttempt)){
+            System.out.println("\nIncorrect, please try again!\n");
+            System.out.print("- Username: ");
+            usernameAttempt = scan.nextLine();
+            System.out.print("- Password: ");
+            passwordAttempt = scan.nextLine();
+        }
         
         /* will be useful for task 2
         
@@ -28,6 +37,8 @@ public class SignIn {
 
         
         */
+
+        System.out.println("Sign in successful. Welcome!");
         scan.close();
         
     }
